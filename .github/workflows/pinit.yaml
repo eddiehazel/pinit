@@ -9,6 +9,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Download docs
-        run: wget -e robots=off -r -np --page-requisites -N https://swarm-gateways.net/bzz:/docs.swarm.eth/
+        run: wget -e robots=off -r -np --page-requisites https://swarm-gateways.net/bzz:/docs.swarm.eth/ || true
       - name: Download book
-        run: wget -e robots=off -r -np --page-requisites -N https://swarm-gateways.net/bzz:/latest.bookofswarm.eth/
+        run: wget -e robots=off -r -np --page-requisites https://swarm-gateways.net/bzz:/latest.bookofswarm.eth/ || true
