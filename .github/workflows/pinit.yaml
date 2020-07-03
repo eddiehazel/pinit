@@ -1,0 +1,14 @@
+name: Pin
+
+on:
+  schedule:
+    - cron:  '*/15 * * * *'
+
+jobs:
+  pinit:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download docs
+        run: wget -e robots=off -r -np --page-requisites --convert-links https://swarm-gateways.net/bzz:/latest.bookofswarm.eth/
+      - name: Download book
+        run: wget -e robots=off -r -np --page-requisites --convert-links https://swarm-gateways.net/bzz:/latest.bookofswarm.eth/
