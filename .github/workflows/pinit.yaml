@@ -1,8 +1,9 @@
 name: Pin
 
-on: [push]
-#  schedule:
-#    - cron:  '0 */4 * * *'
+on:
+  push:
+  schedule:
+    - cron: '*/15 * * * *'
 
 jobs:
   pinit:
