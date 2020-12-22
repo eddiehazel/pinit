@@ -1,14 +1,12 @@
 name: Pin
 
 on: [push]
-#  schedule:
-#    - cron:  '0 */4 * * *'
+ schedule:
+   - cron:  '0 */1 * * *'
 
 jobs:
   pinit:
     runs-on: ubuntu-latest
     steps:
       - name: Download docs
-        run: wget -e robots=off -r -np --page-requisites https://swarm-gateways.net/bzz:/docs.swarm.eth/ || true
-      - name: Download book
-        run: wget -e robots=off -r -np --page-requisites https://swarm-gateways.net/bzz:/latest.bookofswarm.eth/ || true
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/1up1up1up.eth/ || true
