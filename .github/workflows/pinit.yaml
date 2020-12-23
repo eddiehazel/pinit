@@ -11,4 +11,6 @@ jobs:
       - name: Download 1up1up1up.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/1up1up1up.eth/ || true
       - name: Download bee-docs.1up1up1up.eth
-        run: wget -e robots=off -r -np --page-requisites https://bee-0.gateway.ethswarm.org/bzz/bee-docs.1up1up1up.eth/ || true
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/bee-docs.1up1up1up.eth/ || true
+      - name: Download bee-docs.1up1up1up.eth
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/bee-docs.1up1up1up.eth/docs/ || true
