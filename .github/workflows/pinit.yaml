@@ -10,7 +10,9 @@ jobs:
     steps:
       - name: Download 1up1up1up.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/1up1up1up.eth/ || true
-      - name: Download bee-docs.1up1up1up.eth
-        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/bee-docs.1up1up1up.eth/ || true
-      - name: Download bee-docs.1up1up1up.eth
-        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/bee-docs.1up1up1up.eth/docs/ || true
+      - name: Download swarm.eth
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/swarm.eth/ || true
+      - name: Download docs.swarm.eth
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/ || true
+      - name: Download docs.swarm.eth/docs/
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/docs/ || true
