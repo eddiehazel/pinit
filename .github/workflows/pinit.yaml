@@ -24,3 +24,5 @@ jobs:
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/ || true
       - name: Download docs.swarm.eth/docs/
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/docs/ || true
+      - name: Download latest.bookofswarm.eth
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/504b1bd75a206c88dc93ddea0eb07f0e007a4ece8ed0dec36c7e5a1146ab2465 || true
