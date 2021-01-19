@@ -20,9 +20,20 @@ jobs:
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/swarm.eth/jobs-go-developer.html || true
       - name: Download swarm.eth/jobs-senior-go-developer.html
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/swarm.eth/jobs-senior-go-developer.html || true
+      - name: Download swarm.eth
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/451500b4bad3dbe8ca6327d385c03634e5ab57ecbe4fa6177422f37bb64e3b1b/ || true
+      - name: Download swarm.eth/editable.html
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/451500b4bad3dbe8ca6327d385c03634e5ab57ecbe4fa6177422f37bb64e3b1b/editable.html || true
+      - name: Download swarm.eth/jobs-cloud-engineer.html
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/451500b4bad3dbe8ca6327d385c03634e5ab57ecbe4fa6177422f37bb64e3b1b/jobs-cloud-engineer.html || true
+      - name: Download swarm.eth/jobs-go-developer.html
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/451500b4bad3dbe8ca6327d385c03634e5ab57ecbe4fa6177422f37bb64e3b1b/jobs-go-developer.html || true
+      - name: Download swarm.eth/jobs-senior-go-developer.html
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/451500b4bad3dbe8ca6327d385c03634e5ab57ecbe4fa6177422f37bb64e3b1b/jobs-senior-go-developer.html || true
       - name: Download docs.swarm.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/ || true
       - name: Download docs.swarm.eth/docs/
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/docs/ || true
       - name: Download latest.bookofswarm.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/504b1bd75a206c88dc93ddea0eb07f0e007a4ece8ed0dec36c7e5a1146ab2465 || true
+
