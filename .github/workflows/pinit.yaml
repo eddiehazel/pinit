@@ -36,4 +36,11 @@ jobs:
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/docs.swarm.eth/docs/ || true
       - name: Download latest.bookofswarm.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/504b1bd75a206c88dc93ddea0eb07f0e007a4ece8ed0dec36c7e5a1146ab2465 || true
+      - name: Download docs https://gateway.ethswarm.org/bzz/288a956cc554ef938cbf6c5fd9bd72497ef542deba24ad24135be7fe6e2c7147/docs/
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/288a956cc554ef938cbf6c5fd9bd72497ef542deba24ad24135be7fe6e2c7147/docs/
+      - name: Download docs https://gateway.ethswarm.org/bzz/288a956cc554ef938cbf6c5fd9bd72497ef542deba24ad24135be7fe6e2c7147/
+        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/288a956cc554ef938cbf6c5fd9bd72497ef542deba24ad24135be7fe6e2c7147/
+      - name: frontpage
+        run: wget -e robots=off -r -np --page-requisites --no-check-certificate -T10000 -t1  https://gateway.ethswarm.org/bzz/ffa0e66c26674506721eecf80856f0bfc346769336f816590e155f554f147fd1/
+    
 
