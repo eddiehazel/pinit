@@ -8,8 +8,10 @@ jobs:
   pinit:
     runs-on: ubuntu-latest
     steps:
-      - name: Download swarm.eth
-        run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/e5fd2fed9e051617b57d9a85e5fe57b349ad85302b38c26a9e5c168efe4b87d2/ || true
+      - name: Download docs
+        run: wget -t1 -T100 -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/eba7925a4d82c33affaf95fbf3885096487ceb27d8c9f1601f73db4f8ec7624a/ || true
+      - name: Download frontpage
+        run: wget -t1 -T100 -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/e5fd2fed9e051617b57d9a85e5fe57b349ad85302b38c26a9e5c168efe4b87d2/ || true
       - name: Download 1up1up1up.eth
         run: wget -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/1up1up1up.eth/ || true
       - name: Download swarm.eth
