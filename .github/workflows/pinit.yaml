@@ -8,8 +8,8 @@ jobs:
   pinit:
     runs-on: ubuntu-latest
     steps:
-      - name: Download docs
-        run: http://35.180.30.92:1633/bzz/eba7925a4d82c33affaf95fbf3885096487ceb27d8c9f1601f73db4f8ec7624a/docs/
+#       - name: Download docs
+#         run: http://35.180.30.92:1633/bzz/eba7925a4d82c33affaf95fbf3885096487ceb27d8c9f1601f73db4f8ec7624a/docs/
       - name: Download docs
         run: wget -t1 -T100 -e robots=off -r -np --page-requisites https://gateway.ethswarm.org/bzz/eba7925a4d82c33affaf95fbf3885096487ceb27d8c9f1601f73db4f8ec7624a/ || true
       - name: Download frontpage
